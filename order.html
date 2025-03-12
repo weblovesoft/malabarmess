@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malabar Mess - Order Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Malabar Mess</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="order">
+        <h2>Order Your Food</h2>
+        <form action="submit_order.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="food-item">Select Food Item:</label>
+            <select id="food-item" name="food-item" required>
+                <option value="">-- Select an item --</option>
+                <option value="Malabar Parotta & Beef Curry">Malabar Parotta & Beef Curry</option>
+                <option value="Kerala Fish Fry">Kerala Fish Fry</option>
+                <option value="Chicken Chettinad">Chicken Chettinad</option>
+                <option value="Puttu & Kadala Curry">Puttu & Kadala Curry</option>
+                <option value="Idiyappam & Egg Curry">Idiyappam & Egg Curry</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Malabar Mess. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malabar Mess - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Malabar Mess</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <h2>Our Menu</h2>
+
+        <!-- Veg Section -->
+        <h3 class="menu-category veg">🌿 Vegetarian</h3>
+        <ul>
+            <li>
+                <span>Puttu & Kadala Curry</span>
+                <span class="price">₹100</span>
+                <button onclick="orderNow('Puttu & Kadala Curry', 100)">Order Now</button>
+            </li>
+            <li>
+                <span>Vegetable Stew & Appam</span>
+                <span class="price">₹120</span>
+                <button onclick="orderNow('Vegetable Stew & Appam', 120)">Order Now</button>
+            </li>
+        </ul>
+
+        <!-- Non-Veg Section -->
+        <h3 class="menu-category non-veg">🍗 Non-Vegetarian</h3>
+        <ul>
+            <li>
+                <span>Malabar Parotta & Beef Curry</span>
+                <span class="price">₹200</span>
+                <button onclick="orderNow('Malabar Parotta & Beef Curry', 200)">Order Now</button>
+            </li>
+            <li>
+                <span>Kerala Fish Fry</span>
+                <span class="price">₹150</span>
+                <button onclick="orderNow('Kerala Fish Fry', 150)">Order Now</button>
+            </li>
+            <li>
+                <span>Chicken Chettinad</span>
+                <span class="price">₹180</span>
+                <button onclick="orderNow('Chicken Chettinad', 180)">Order Now</button>
+            </li>
+        </ul>
+
+        <!-- Tiffins Section -->
+        <h3 class="menu-category tiffins">🍽️ Tiffins</h3>
+        <ul>
+            <li>
+                <span>Idiyappam & Egg Curry</span>
+                <span class="price">₹130</span>
+                <button onclick="orderNow('Idiyappam & Egg Curry', 130)">Order Now</button>
+            </li>
+            <li>
+                <span>Dosa & Coconut Chutney</span>
+                <span class="price">₹90</span>
+                <button onclick="orderNow('Dosa & Coconut Chutney', 90)">Order Now</button>
+            </li>
+        </ul>
+
+        <!-- Snacks Section -->
+        <h3 class="menu-category snacks">🍪 Snacks</h3>
+        <ul>
+            <li>
+                <span>Banana Fry</span>
+                <span class="price">₹50</span>
+                <button onclick="orderNow('Banana Fry', 50)">Order Now</button>
+            </li>
+            <li>
+                <span>Uzhunnu Vada</span>
+                <span class="price">₹40</span>
+                <button onclick="orderNow('Uzhunnu Vada', 40)">Order Now</button>
+            </li>
+        </ul>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Malabar Mess. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
